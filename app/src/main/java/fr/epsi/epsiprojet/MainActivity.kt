@@ -13,6 +13,13 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
         var infosButton = findViewById<Button>(R.id.infosButton)
+        var produitButton = findViewById<Button>(R.id.produitsButton)
+        infosButton.setOnClickListener{
+            startActivity(Intent(this, InfosActivity::class.java))
+        }
+        produitButton.setOnClickListener{
+            startActivity(Intent(this, CategoriesActivity::class.java))
+        }
     }
 
 }

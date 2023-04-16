@@ -13,9 +13,24 @@
         android:theme="@style/Theme.EpsiProjet"
         tools:targetApi="31">
         <activity
+            android:name=".ProduitDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProduitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfosActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,8 +40,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
